@@ -33,7 +33,7 @@ public class TestArrayInitListener {
         ParseTreeWalker walker = new ParseTreeWalker();
 
         //遍历语法分析过程中生成的语法分析树，触发发回调
-        walker.walk(new ShortToUnicodeString(),tree);
+        walker.walk(new ShortToUnicodeString(parser),tree);
 
         ;
 

@@ -3,7 +3,7 @@ grammar ArrayInit;
 init : '{' value (',' value)* '}' ;
 
 value : init
-      |  INT
+      | INT
 	  ;
 
 INT : [0-9]+;
