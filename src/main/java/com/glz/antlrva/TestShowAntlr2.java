@@ -37,8 +37,7 @@ public class TestShowAntlr2 {
 
         root.accept(visitor);
 
-        System.out.println(        visitor.getResult());
-
+        System.out.println(visitor.getResult());
 
 
         visitor.getKeyVal();

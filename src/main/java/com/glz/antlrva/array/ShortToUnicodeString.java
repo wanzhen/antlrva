@@ -38,6 +38,8 @@ public class ShortToUnicodeString extends ArrayInitBaseListener {
             System.out.printf("\\u%04x", value);
         }
 
+
+
         TokenStream tokenStream = parser.getTokenStream();
 
         System.out.println();

@@ -1,5 +1,9 @@
 grammar Calculator;
 
+@header{
+package com.glz.antlrva.g4;
+}
+
 prog : stat+;
 // Parser rules
 parse: expr EOF;

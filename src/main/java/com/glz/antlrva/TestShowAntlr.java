@@ -1,6 +1,5 @@
 package com.glz.antlrva;
 
-import com.glz.antlrva.g4.CalculatorBaseVisitor;
 import com.glz.antlrva.g4.CalculatorLexer;
 import com.glz.antlrva.g4.CalculatorParser;
 import org.antlr.v4.runtime.CharStreams;
@@ -20,7 +19,8 @@ public class TestShowAntlr {
 
 
 
-        String expression ="(a - b) * (3 + ad) + (2*3)*(1+2) \n";
+       // String expression ="(a - b) * (3 + ad) + (2*3)*(1+2) \n";
+        String expression ="a - b";
         CalculatorLexer lexer = new CalculatorLexer(CharStreams.fromString(expression));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         CalculatorParser parser = new CalculatorParser(tokens);

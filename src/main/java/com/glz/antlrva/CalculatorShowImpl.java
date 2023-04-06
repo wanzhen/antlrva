@@ -5,7 +5,6 @@ package com.glz.antlrva;
 import com.glz.antlrva.g4.CalculatorBaseVisitor;
 import com.glz.antlrva.g4.CalculatorParser;
 import lombok.extern.slf4j.Slf4j;
-import org.antlr.v4.runtime.tree.TerminalNode;
 
 import java.util.ArrayList;
 import java.util.HashMap;
