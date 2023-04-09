@@ -1,6 +1,6 @@
 // Generated from java-escape by ANTLR 4.11.1
 
-  package com.glz.antlrva.eecsantlr;
+package com.glz.antlrva.eecsantlr.base;
 
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -26,6 +26,20 @@ public interface ExprVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitDeclaration(ExprParser.DeclarationContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code Div}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDiv(ExprParser.DivContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code Sub}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSub(ExprParser.SubContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code Multiplication}
 	 * labeled alternative in {@link ExprParser#expr}.
@@ -54,4 +68,11 @@ public interface ExprVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitNumber(ExprParser.NumberContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code Parens}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitParens(ExprParser.ParensContext ctx);
 }

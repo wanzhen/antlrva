@@ -1,6 +1,6 @@
 // Generated from java-escape by ANTLR 4.11.1
 
-  package com.glz.antlrva.eecsantlr;
+package com.glz.antlrva.eecsantlr.base;
 
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -33,6 +33,30 @@ public interface ExprListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDeclaration(ExprParser.DeclarationContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Div}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterDiv(ExprParser.DivContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Div}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitDiv(ExprParser.DivContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Sub}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterSub(ExprParser.SubContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Sub}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitSub(ExprParser.SubContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code Multiplication}
 	 * labeled alternative in {@link ExprParser#expr}.
@@ -81,4 +105,16 @@ public interface ExprListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitNumber(ExprParser.NumberContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Parens}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterParens(ExprParser.ParensContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Parens}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitParens(ExprParser.ParensContext ctx);
 }
